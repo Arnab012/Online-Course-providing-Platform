@@ -1,0 +1,69 @@
+.container {
+  height: 100vh;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+.chobi {
+  filter: drop-shadow(0 40px 10px rgba(0, 0, 0, 0.3));
+  animation: chobilorba 700ms infinite ease-in-out alternate;
+}
+
+@keyframes chobilorba {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/*  */
+.Brandsbanner > svg {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.5s;
+
+  &:hover {
+    color: rgb(255, 221, 0);
+  }
+}
+
+.container2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > video {
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    width: 60%;
+    border-radius: 10px;
+    outline: none;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+
+    .container2 {
+        height: unset;
+        padding: 8vh 0 ;
+        
+    }
+
+    .container2 >video{
+        width: 100%;
+    }
+
+
+    
+}
+
+
+
+.course{
+  width: 250px;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+  &:hover{
+    transform: translateY(-10px);
+  }
+}
